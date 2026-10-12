@@ -52,30 +52,95 @@ Navigate organic search results effortlessly:
 
 ---
 
-## 📥 Installation
+## 📥 Installation Guide
 
-### Chrome / Brave / Edge / Opera
+> **Note for Beginners:** You do not need to know any programming, terminal commands, or Git! Since this extension is loaded locally instead of downloaded from the Chrome Web Store, your browser will simply read the project files directly from a folder on your computer.
 
-1. Download or clone this repository:
-   ```bash
-   git clone https://github.com/tninanofchirawa/clean-google-search.git
-   ```
-2. Open your browser and navigate to the Extensions page:
-   - **Chrome**: `chrome://extensions`
-   - **Brave**: `brave://extensions`
-   - **Edge**: `edge://extensions`
-3. Enable **Developer mode** (toggle switch in the top right corner).
-4. Click the **Load unpacked** button (top left).
-5. Select the `clean_google_search` folder.
-6. Done! Pin the extension to your toolbar for quick access to search controls.
+---
 
-### 🔄 Reloading After Code Updates
-Whenever files are edited or updated:
-1. Go to `chrome://extensions` in your browser.
-2. Locate the **Clean Google Search** card.
-3. Click the **Reload** (circular arrow 🔄) button on the card.
-4. Refresh any open Google Search tabs (<kbd>Ctrl</kbd> + <kbd>R</kbd> or <kbd>F5</kbd>)!
+### ⚡ Quick Install (For Experienced Users / Devs)
 
+If you already know how to load unpacked extensions:
+
+1. Clone or download: `git clone https://github.com/tninanofchirawa/clean-google-search.git`
+2. Open `chrome://extensions` (or `brave://extensions` / `edge://extensions`).
+3. Toggle on **Developer mode** (top-right).
+4. Click **Load unpacked** (top-left) and select the root directory (containing `manifest.json`).
+5. Pin the extension to your toolbar.
+
+---
+
+### 🟢 Beginner-Friendly Step-by-Step Guide
+
+Supported Browsers: **Google Chrome** | **Brave** | **Microsoft Edge** | **Opera**
+
+#### 📦 Step 1: Download the Files
+* What is happening: You are saving a copy of the extension code onto your machine so your browser can use it.
+1. Scroll to the top of this GitHub repository page.
+2. Click the green **Code** button near the top right.
+3. In the dropdown menu, click **Download ZIP**.
+4. Wait a few seconds for the file to finish downloading to your computer.
+
+---
+
+#### 📂 Step 2: Unzip (Extract) the Folder
+* What is happening: Downloaded files come compressed in a `.zip` archive. Your browser cannot read compressed files directly, so we must extract them into a standard folder.
+1. Open your computer's **Downloads** folder.
+2. Find the downloaded file (usually named `clean-google-search-main.zip`).
+3. **Right-click** the file and choose:
+   - On Windows: **Extract All...** → Click **Extract**.
+   - On Mac: Double-click the file to expand it automatically.
+4. Open the newly created unzipped folder. Make sure you see files like `manifest.json`, `content.css`, and `modules/` inside it. **Leave this folder right where it is** (do not delete or move it later, or the extension will stop working).
+
+---
+
+#### 🌐 Step 3: Open Your Browser's Extensions Dashboard
+* What is happening: Browsers keep their addon/extension controls on a dedicated settings screen.
+1. Open your preferred web browser.
+2. Copy and paste the matching address into your address/URL bar at the top, then hit <kbd>Enter</kbd>:
+   - **Chrome:** `chrome://extensions`
+   - **Brave:** `brave://extensions`
+   - **Edge:** `edge://extensions`
+   - **Opera:** `opera://extensions`
+
+---
+
+#### 🛠️ Step 4: Turn On Developer Mode
+* What is happening: Regular browser security locks out custom local folders by default. Developer mode is the master switch that allows you to install extensions from your computer.
+1. Look at the top-right corner of the Extensions page.
+2. Find the toggle switch labeled **Developer mode**.
+3. Click it to turn it **ON** (the toggle will slide and light up).
+
+---
+
+#### 🚀 Step 5: Load the Extension
+* What is happening: You are telling your browser: "Read and run the extension stored in this specific folder."
+1. Look at the top-left corner of the page.
+2. Click the button labeled **Load unpacked**.
+3. A file browser window will pop up.
+4. Navigate to your unzipped folder and select the folder that directly contains `manifest.json`.
+5. Click **Select Folder** (or **Open**).
+
+---
+
+#### 📌 Step 6: Pin & Start Searching!
+* What is happening: Pinning keeps the extension shortcut always visible next to your address bar for quick access.
+1. Look at the top-right toolbar of your browser for the puzzle piece icon (🧩).
+2. Click the puzzle icon to open your installed extensions list.
+3. Locate **Clean Google Search** and click the **Pin** icon (📌).
+4. Head over to [Google](https://www.google.com) and run a search—your clean, decluttered results are ready!
+
+---
+
+### 🔄 Updating or Reloading the Extension
+
+Whenever you download a new update or modify any project files:
+
+1. Return to your extensions dashboard (`chrome://extensions`).
+2. Find the **Clean Google Search** card.
+3. Click the **Reload** circular arrow button (🔄) on the card.
+   * *What this does:* It flushes the browser's stored cache and re-reads the updated files from your disk.
+4. Refresh any active Google Search tabs (<kbd>Ctrl</kbd> + <kbd>R</kbd> or <kbd>F5</kbd> on Windows / <kbd>Cmd</kbd> + <kbd>R</kbd> on Mac) to see the new changes in action.
 ---
 
 ## 📂 Project Structure
