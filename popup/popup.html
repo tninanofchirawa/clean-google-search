@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Google Search</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="header">
+        <div class="header-title-wrap">
+            <div class="header-icon">G</div>
+            <div class="title">Clean Google Search</div>
+        </div>
+        <div class="status-badge" id="statusBadge">
+            <span class="status-dot"></span>
+            <span id="statusText">Active</span>
+        </div>
+    </div>
+
+    <!-- Master Switch -->
+    <div class="master-card">
+        <div>
+            <div class="master-label">Enable Cleanup</div>
+            <div class="master-sublabel">Master switch for all filters</div>
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="enabled">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <!-- Search Modes -->
+    <div class="section-title">Search Mode</div>
+    <div class="toggle-group">
+        <label class="toggle-row" for="forceWeb">
+            <div class="toggle-info">
+                <span class="toggle-label">Web-Only Mode (&udm=14)</span>
+                <span class="toggle-desc">Direct text results; strips AI & widgets</span>
+            </div>
+            <div class="switch">
+                <input type="checkbox" id="forceWeb">
+                <span class="slider"></span>
+            </div>
+        </label>
+    </div>
+
+    <!-- Content Filters -->
+    <div class="section-title">Distraction Filters</div>
+    <div class="toggle-group">
+        <label class="toggle-row" for="hideAi">
+            <div class="toggle-info">
+                <span class="toggle-label">AI Overviews & Mode Tabs</span>
+                <span class="toggle-desc">Hide AI summary boxes & top tabs</span>
+            </div>
+            <div class="switch">
+                <input type="checkbox" id="hideAi">
+                <span class="slider"></span>
+            </div>
+        </label>
+
+        <label class="toggle-row" for="hideAds">
+            <div class="toggle-info">
+                <span class="toggle-label">Sponsored Ads</span>
+                <span class="toggle-desc">Hide top/bottom paid advertisements</span>
+            </div>
+            <div class="switch">
+                <input type="checkbox" id="hideAds">
+                <span class="slider"></span>
+            </div>
+        </label>
+
+        <label class="toggle-row" for="hideNews">
+            <div class="toggle-info">
+                <span class="toggle-label">News & Top Stories</span>
+                <span class="toggle-desc">Hide story carousels & side news cards</span>
+            </div>
+            <div class="switch">
+                <input type="checkbox" id="hideNews">
+                <span class="slider"></span>
+            </div>
+        </label>
+
+        <label class="toggle-row" for="hideSocial">
+            <div class="toggle-info">
+                <span class="toggle-label">Discussions & Forums</span>
+                <span class="toggle-desc">Hide Reddit/forum "What people are saying"</span>
+            </div>
+            <div class="switch">
+                <input type="checkbox" id="hideSocial">
+                <span class="slider"></span>
+            </div>
+        </label>
+
+        <label class="toggle-row" for="hideRelated">
+            <div class="toggle-info">
+                <span class="toggle-label">People Also Search & Profiles</span>
+                <span class="toggle-desc">Hide related query boxes & social icons</span>
+            </div>
+            <div class="switch">
+                <input type="checkbox" id="hideRelated">
+                <span class="slider"></span>
+            </div>
+        </label>
+
+        <label class="toggle-row" for="hideShorts">
+            <div class="toggle-info">
+                <span class="toggle-label">Short Videos & Reels</span>
+                <span class="toggle-desc">Hide TikTok & YouTube Shorts carousels</span>
+            </div>
+            <div class="switch">
+                <input type="checkbox" id="hideShorts">
+                <span class="slider"></span>
+            </div>
+        </label>
+    </div>
+
+    <!-- Navigation -->
+    <div class="section-title">Productivity</div>
+    <div class="toggle-group">
+        <label class="toggle-row" for="keyNav">
+            <div class="toggle-info">
+                <span class="toggle-label">Vim / Arrow Navigation</span>
+                <span class="toggle-desc">Navigate organic results via keyboard</span>
+            </div>
+            <div class="switch">
+                <input type="checkbox" id="keyNav">
+                <span class="slider"></span>
+            </div>
+        </label>
+    </div>
+
+    <div class="shortcuts-box" id="shortcutsBox">
+        <div class="shortcuts-header">Quick Shortcuts</div>
+        <div class="keys-row">
+            <span><kbd>j</kbd> Next</span>
+            <span><kbd>k</kbd> Prev</span>
+            <span><kbd>Enter</kbd> Open</span>
+            <span><kbd>Ctrl+Enter</kbd> New Tab</span>
+            <span><kbd>Esc</kbd> Unfocus</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <button class="btn-reset" id="resetBtn" title="Reset all options to default settings">Reset to Defaults</button>
+        <span class="account-badge" title="No network requests; Google account & settings protected">🔒 Account Safe</span>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

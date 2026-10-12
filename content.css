@@ -1,0 +1,253 @@
+/**
+ * Clean Google Search - Content Styles
+ * Safe, zero-flicker distraction removal powered by data attributes.
+ *
+ * SAFETY GUARANTEES:
+ * 1. Elements inside #gb (Google Bar / Account Switcher) are strictly preserved.
+ * 2. The top Quick Settings gear button, dialogs, and slide-out panel are strictly preserved.
+ * 3. Search form and search tools are strictly preserved.
+ * 4. Organic search results (#rso div.g) and Wikipedia Knowledge Panels are strictly preserved.
+ */
+
+/* ==========================================================================
+   1. AI Overviews & AI Search Modules (Zero-Delay, Zero-Flicker)
+   ========================================================================== */
+:is(
+    html[data-clean-enabled="true"][data-clean-hide-ai="true"],
+    html:not([data-clean-enabled="false"]):not([data-clean-hide-ai="false"])
+) :is(
+    #aim,
+    #m-x-content,
+    #super-overview,
+    #Odp5De,
+    #eKIzJc,
+    .hdzaWe,
+    .M8OgIe,
+    .GcKpu,
+    .YzCcne,
+    .WAUd4,
+    .OZ9ddf,
+    [jsname="cUzNTd"],
+    div[data-attrid="AIOverview"],
+    div[data-attrid="ai_overview"],
+    div[data-attrid*="ai_overview"],
+    div[data-attrid="wa:/description"],
+    div[data-attrid="kc:/collection/knowledge_panels/ai_overview:summary"],
+    div[aria-label="AI Overview"],
+    div[aria-label="AI overview"],
+    div[aria-label*="AI Overview" i],
+    div[data-entityid*="ai_overview"],
+    div[data-async-type="folsrch"],
+    div[id^="folsrch"],
+    div[data-hveid]:has(#m-x-content),
+    div[data-hveid]:has([data-attrid*="ai_overview"]),
+    div[data-hveid]:has([data-attrid="AIOverview"]),
+    div[data-hveid]:has([data-async-type="folsrch"]),
+    div[data-hveid]:has([id^="folsrch"]),
+    div[data-hveid]:has(a[href*="p=ai_overviews"]),
+    div[data-hveid]:has(path[d^="M235.5 471"]),
+    div.M8OgIe:has(#eKIzJc),
+    div.M8OgIe:has([jsname="cUzNTd"]),
+    #rso > div:has(#m-x-content),
+    #rso > div:has([data-attrid*="ai_overview"]),
+    #rso > div:has([data-attrid="AIOverview"]),
+    #rso > div:has([data-async-type="folsrch"]),
+    #rso > div:has([id^="folsrch"]),
+    #rso > div:has(a[href*="p=ai_overviews"]),
+    #rso > div:has(path[d^="M235.5 471"]),
+    #rso > div:has([aria-label*="AI Overview" i]),
+    div:has(> #m-x-content),
+    div:has(> [data-attrid*="ai_overview"]),
+    div:has(> [data-async-type="folsrch"]),
+    div:has(> [id^="folsrch"]),
+    div[role="listitem"]:has(a[href*="udm=50"]),
+    div[role="listitem"]:has(a[aria-label*="AI Mode" i])
+):not(
+    #gb, #gb *,
+    header, header *,
+    #searchform, #searchform *,
+    [role="dialog"], [role="dialog"] *,
+    [role="menu"], [role="menu"] *,
+    [aria-label*="settings" i], [aria-label*="settings" i] *,
+    #c-b-p, #c-b-p *,
+    div.g, div.g *
+) {
+    display: none !important;
+}
+
+/* ==========================================================================
+   2. Sponsored Ads
+   ========================================================================== */
+:is(
+    html[data-clean-enabled="true"][data-clean-hide-ads="true"],
+    html:not([data-clean-enabled="false"]):not([data-clean-hide-ads="false"])
+) :is(
+    #taw,
+    #bottomads,
+    #tvcap,
+    div[data-text-ad],
+    div[aria-label="Ads"],
+    div[aria-label="Sponsored"],
+    div[data-attrid="ads"],
+    div.commercial-unit-desktop-top,
+    div.commercial-unit-desktop-rhs
+):not(
+    #gb, #gb *,
+    header, header *,
+    #searchform, #searchform *,
+    [role="dialog"], [role="dialog"] *,
+    [role="menu"], [role="menu"] *,
+    [aria-label*="settings" i], [aria-label*="settings" i] *,
+    div.g, div.g *
+) {
+    display: none !important;
+}
+
+/* ==========================================================================
+   3. Top Stories & News Carousels
+   ========================================================================== */
+:is(
+    html[data-clean-enabled="true"][data-clean-hide-news="true"],
+    html:not([data-clean-enabled="false"]):not([data-clean-hide-news="false"])
+) :is(
+    div[data-attrid="top_stories"],
+    div[data-attrid="news"],
+    div[data-attrid="also_in_the_news"],
+    g-section-with-header[data-attrid*="news"],
+    g-section-with-header:has(a[href*="tbm=nws"]),
+    g-section-with-header:has(a[href*="news.google.com"]),
+    div[role="listitem"]:has(a[href*="tbm=nws"]),
+    div[role="listitem"]:has(a[href*="udm=12"])
+):not(
+    #gb, #gb *,
+    header, header *,
+    #searchform, #searchform *,
+    [role="dialog"], [role="dialog"] *,
+    [role="menu"], [role="menu"] *,
+    [aria-label*="settings" i], [aria-label*="settings" i] *,
+    div.g, div.g *
+) {
+    display: none !important;
+}
+
+/* ==========================================================================
+   4. Social Discussions & Forums ("What people are saying")
+   ========================================================================== */
+:is(
+    html[data-clean-enabled="true"][data-clean-hide-social="true"],
+    html:not([data-clean-enabled="false"]):not([data-clean-hide-social="false"])
+) :is(
+    div[data-attrid="wa:/social_discussions"],
+    div[data-attrid*="discussions_and_forums"],
+    g-section-with-header[data-attrid*="social"],
+    g-section-with-header:has(a[href*="reddit.com"])
+):not(
+    #gb, #gb *,
+    header, header *,
+    #searchform, #searchform *,
+    [role="dialog"], [role="dialog"] *,
+    [role="menu"], [role="menu"] *,
+    [aria-label*="settings" i], [aria-label*="settings" i] *,
+    div.g, div.g *
+) {
+    display: none !important;
+}
+
+/* ==========================================================================
+   5. "People Also Search For", Social Profile Boxes & Sidebar Dividers
+   ========================================================================== */
+:is(
+    html[data-clean-enabled="true"][data-clean-hide-related="true"],
+    html:not([data-clean-enabled="false"]):not([data-clean-hide-related="false"])
+) :is(
+    .oIk2Cb,
+    [id^="eob_"],
+    div:has(> [id^="eob_"]),
+    div:has(> .oIk2Cb),
+    div[data-attrid*="also_searched_for"],
+    div[data-attrid*="kc:/common/topic:also_searched_for"],
+    div[data-attrid*="kc:/collection/knowledge_panels/has_phone:see_more"],
+    div[data-attrid*="profiles"],
+    div[data-attrid="kc:/common/topic:social_media_presence"],
+    #rhs .oIk2Cb,
+    #rhs [id^="eob_"],
+    #rhs div.mod:has(.oIk2Cb),
+    #rhs div.mod:has([id^="eob_"]),
+    #rhs div[data-hveid]:has(.oIk2Cb),
+    #rhs div[data-hveid]:has([id^="eob_"])
+):not(
+    #gb, #gb *,
+    header, header *,
+    #searchform, #searchform *,
+    [role="dialog"], [role="dialog"] *,
+    [role="menu"], [role="menu"] *,
+    [aria-label*="settings" i], [aria-label*="settings" i] *,
+    div.g, div.g *
+) {
+    display: none !important;
+}
+
+/* Remove divider lines and module separator borders in Knowledge Panel (#rhs) */
+:is(
+    html[data-clean-enabled="true"][data-clean-hide-related="true"],
+    html:not([data-clean-enabled="false"]):not([data-clean-hide-related="false"])
+) #rhs :is(
+    hr,
+    [role="separator"],
+    .kp-blk hr,
+    .kp-blk [role="separator"]
+):not(
+    #gb, #gb *,
+    [role="dialog"], [role="dialog"] *,
+    div.g, div.g *
+) {
+    display: none !important;
+}
+
+:is(
+    html[data-clean-enabled="true"][data-clean-hide-related="true"],
+    html:not([data-clean-enabled="false"]):not([data-clean-hide-related="false"])
+) #rhs :is(
+    .kp-blk .mod,
+    .kp-blk div[data-attrid]
+):not(
+    #gb, #gb *,
+    [role="dialog"], [role="dialog"] *,
+    div.g, div.g *
+) {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+/* ==========================================================================
+   6. Short Videos & Carousels (YouTube Shorts / TikTok)
+   ========================================================================== */
+:is(
+    html[data-clean-enabled="true"][data-clean-hide-shorts="true"],
+    html:not([data-clean-enabled="false"]):not([data-clean-hide-shorts="false"])
+) :is(
+    div[data-attrid*="short_videos"],
+    g-scrolling-carousel:has(a[href*="youtube.com/shorts"]),
+    g-scrolling-carousel:has(a[href*="tiktok.com"])
+):not(
+    #gb, #gb *,
+    header, header *,
+    #searchform, #searchform *,
+    [role="dialog"], [role="dialog"] *,
+    [role="menu"], [role="menu"] *,
+    [aria-label*="settings" i], [aria-label*="settings" i] *,
+    div.g, div.g *
+) {
+    display: none !important;
+}
+
+/* ==========================================================================
+   7. Keyboard Navigation Focus Indicator
+   ========================================================================== */
+.clean-search-active-link {
+    outline: 2px solid #3b82f6 !important;
+    outline-offset: 4px !important;
+    border-radius: 6px !important;
+    background-color: rgba(59, 130, 246, 0.08) !important;
+    transition: outline-color 0.15s ease, background-color 0.15s ease !important;
+}
