@@ -34,24 +34,24 @@ Clean Google Search uses a **Zero-Flicker, CSS-Driven Architecture**:
 
 ```mermaid
 flowchart TD
-    subgraph Browser Storage
+    subgraph "Browser Storage"
         Storage[chrome.storage.sync]
     end
 
-    subgraph Content Script Layer (document_start)
+    subgraph "Content Script Layer (document_start)"
         Config[modules/config.js] --> Filters[modules/filters.js]
         Filters --> Nav[modules/navigation.js]
         Nav --> Main[content.js]
     end
 
-    subgraph DOM & Rendering
+    subgraph "DOM & Rendering"
         HTML["document.documentElement<br>(data-clean-* attributes)"]
         CSS[content.css]
         Observer[MutationObserver]
     end
 
-    subgraph User Interface
-        Popup[popup/popup.html & js]
+    subgraph "User Interface"
+        Popup["popup/popup.html & js"]
     end
 
     Storage -->|Initial settings| Main
