@@ -58,7 +58,7 @@ Navigate organic search results effortlessly:
 
 1. Download or clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/clean-google-search.git
+   git clone https://github.com/tninanofchirawa/clean-google-search.git
    ```
 2. Open your browser and navigate to the Extensions page:
    - **Chrome**: `chrome://extensions`
