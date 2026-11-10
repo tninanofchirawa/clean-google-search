@@ -55,8 +55,8 @@ Navigate organic search results effortlessly:
 
 ---
 
->[!Danger]
-># This is Still being built, there are a lot of issues that are here. I would advise not to use this now, let me finish the Corrections.
+>[!danger]
+>This is Still being built, there are a lot of issues that are here. I would advise not to use this now, let me finish the Corrections.
 
 ---
 ## 📥 Installation Guide
