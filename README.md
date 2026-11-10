@@ -58,7 +58,8 @@ Navigate organic search results effortlessly:
 ## 📥 Installation Guide
 
 > **Note for Beginners:** You do not need to know any programming, terminal commands, or Git! Since this extension is loaded locally instead of downloaded from the Chrome Web Store, your browser will simply read the project files directly from a folder on your computer.
-
+>[!warning]
+>This is Still being built, there are a lot of issues that are here. I would advise not to use this now, let me finish the Corrections.
 ---
 
 ### ⚡ Quick Install (For Experienced Users / Devs)
