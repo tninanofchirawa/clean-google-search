@@ -1,8 +1,5 @@
 # 🔍 Clean Google Search
 
->[!warning]
->This is Still being built, there are a lot of issues that are here. I would advise not to use this now, let me finish the Corrections.
-
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue.svg)](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Privacy: Zero Telemetry](https://img.shields.io/badge/Privacy-Zero%20Telemetry-green.svg)](#-privacy--safety-guarantee)
@@ -10,6 +7,9 @@
 
 A fast, lightweight, and distraction-free browser extension for Google Search. Eliminates AI Overviews, sponsored ads, news carousels, and social widgets while keeping your Google account, top settings gear, and navigation completely untouched.
 
+---
+> [!CAUTION]
+> This is still under development
 ---
 
 ## ✨ Features
